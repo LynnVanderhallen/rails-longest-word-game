@@ -1,0 +1,13 @@
+<div class="container">
+<h1>Games#game</h1>
+<p>Find me in app/views/games/game.html.erb</p>
+
+<%= @grid %>
+
+<form action="score" method="get">
+  <input type="text" name= "user_word" placeholder="Give the word please!">
+  <input type="hidden" name= "grid" value= "<%= @grid.join %>">
+  <input type="hidden" name=start_time value= "<%= @start_time %>">
+  <input type="submit">
+</form>
+</div>
